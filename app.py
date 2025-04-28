@@ -34,7 +34,7 @@ docsearch = PineconeVectorStore.from_existing_index(
 
 
 retriever = docsearch.as_retriever(search_kwargs={"k": 3})
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCGreRUzvqvyWkjNU6nWzKDpzxS-yYNLvM"
+os.environ["GOOGLE_API_KEY"] = "GEMINI_API_KEY"
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash-001",
     temperature=0.4,
